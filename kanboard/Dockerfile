@@ -20,7 +20,6 @@ RUN apk --no-cache --update add \
 
 ADD . /var/www/app
 ADD docker/ /
-RUN chmod +www /var/www/app/
 
 RUN rm -rf /var/www/app/docker && echo $VERSION > /version.txt
 
